@@ -8,7 +8,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr repeat(6, 1fr);
+  grid-template-rows: 1fr repeat(6, 1fr);
   font-family: "Lexend", Arial, Helvetica, sans-serif;
 }
 
@@ -71,7 +71,7 @@ img[src$=".png"]:not(img[src="icons/view-dashboard.png"]) {  /* icons */
   width: 2em;
 }
 
-img[src$=".jpg"] {  /* profile picture */
+.profile {  /* profile picture */
   height: 3em;
   width: 3em;
   border-radius: 50px;
@@ -93,6 +93,7 @@ input:focus {
 .header-one {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .search {
@@ -108,4 +109,56 @@ input:focus {
   padding-left: 1.5em;
   gap: 1.5em;
   margin: 10px;
+}
+
+.user-info:last-child {
+  font-weight: bold;
+  padding-right: 2em;
+}
+
+.header-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+}
+
+.larger-profile {
+  height: 5em;
+  width: 5em;
+  border-radius: 50px;
+  margin-left: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 1.2em;
+}
+
+button {
+  background-color: rgb(0, 150, 231);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 0.8em 2.5em;
+  margin: 0.5em;
+}
+
+.buttons {
+  padding-right: 2em;
+}
+
+button:hover {
+  background-color: rgb(0, 159, 245);
+  cursor: pointer;
+}
+
+.main {
+  background-color: rgb(233, 242, 249);
 }
